@@ -29,8 +29,10 @@ int main(int argc, char** argv){
   // Define a position and orientation for the robot to reach
   pick_up_goal.target_pose.pose.position.x = 1.0;
   pick_up_goal.target_pose.pose.orientation.w = 1.0;
-  drop_off_goal.target_pose.pose.position.x = 4.0;
-  drop_off_goal.target_pose.pose.position.y = -0.8;
+  drop_off_goal.target_pose.pose.position.x = -0.31;
+  drop_off_goal.target_pose.pose.position.y = -0.22;
+  drop_off_goal.target_pose.pose.orientation.z = 0.99;
+  drop_off_goal.target_pose.pose.orientation.w = 0.009;
 
    // Send the goal position and orientation for the robot to reach
   ROS_INFO("Sending pick_up_goal");
